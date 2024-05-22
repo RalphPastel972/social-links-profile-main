@@ -22,8 +22,8 @@ body {
 
 .card {
   background-color: var(--neutral-color-three);
-  width: 384px;
-
+  max-width: 384px;
+  min-width: 327px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -97,4 +97,9 @@ body {
   font-weight: 500;
   font-size: small;
   text-align: center;
+}
+
+.card_link:hover {
+  color: var(--neutral-color-three);
+  background-color: var(--primary-color-green);
 }
