@@ -1,0 +1,100 @@
+/* Color Styles */
+:root {
+  --primary-color-green: hsl(75, 94%, 57%);
+  --neutral-color-one: #fff;
+  --neutral-color-two: hsl(0, 0%, 20%);
+  --neutral-color-three: hsl(0, 0%, 12%);
+  --neutral-color-four: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt_wght.ttf) format("truetype");
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral-color-four);
+}
+
+.card {
+  background-color: var(--neutral-color-three);
+  width: 384px;
+
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 24px;
+  align-items: center;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.card_profile_pic {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card_profile_pic img {
+  max-width: 100%;
+}
+
+.card_name_and_location {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user_name h1 {
+  color: var(--neutral-color-one);
+  font-family: Inter;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: x-large;
+  margin: 0;
+}
+
+.user_location {
+  color: var(--primary-color-green);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.card_bio {
+  color: var(--neutral-color-one);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: small;
+  text-align: center;
+}
+
+.card_links_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card_link {
+  background-color: var(--neutral-color-two);
+  color: var(--neutral-color-one);
+  padding: 12px;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: small;
+  text-align: center;
+}
